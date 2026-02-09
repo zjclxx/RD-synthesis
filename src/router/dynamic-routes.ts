@@ -23,7 +23,7 @@ export default [
       title: "首页",
       icon: "HomeOutlined",
     },
-    component: () => import("~/pages/dashboard/analysis.vue"),
+    component: () => import("~/pages/home/index.vue"),
   },
   {
     path: "/material",

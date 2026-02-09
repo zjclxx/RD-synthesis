@@ -1,7 +1,7 @@
 import type { LayoutSetting } from "~@/stores/app";
 
 export default {
-  title: "DR 合成系统",
+  title: "RD 合成系统",
   theme: "inverted",
   isShowChangeTheme: false,
   logo: "/logo.svg",
@@ -22,8 +22,8 @@ export default {
   multiTab: false,
   multiTabFixed: false,
   headerHeight: 48,
-  copyright: "copyright DR 合成系统",
-  waterMarkWord: "DR 合成系统",
+  copyright: "copyright RD 合成系统",
+  waterMarkWord: "RD 合成系统",
   isShowUserAvatar: true,
   isShowSettingDrawerIcon: true,
   isShowWaterMark: true,
