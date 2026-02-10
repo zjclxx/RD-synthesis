@@ -6,6 +6,7 @@ html {
   --bg-color: #fff;
   --hover-color: rgba(0, 0, 0, 0.025);
   --bg-color-container: #f0f2f5;
+  --border-color: rgba(0, 0, 0, 0.85);
 }
 
 html.dark {
@@ -15,6 +16,7 @@ html.dark {
   --bg-color: rgb(36, 37, 37);
   --hover-color: rgb(42, 44, 55);
   --bg-color-container: rgb(42, 44, 44);
+  --border-color: rgba(255, 255, 255, 0.85);
 }
 
 body {
