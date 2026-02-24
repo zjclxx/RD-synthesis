@@ -2,6 +2,7 @@ import { TableColumnType, Modal, message } from "ant-design-vue";
 import { IMaterialItem } from "./model";
 import { buildUUID } from "~@/utils/uuid";
 import { isNumberByRegex } from "~@/utils/tools";
+import { downloadJson } from "~@/utils/json";
 import {
   materialTypeList,
   MaterialType,
@@ -41,8 +42,8 @@ export default function useMaterial() {
               ? parseFloat(fiedls[4])
               : 0
             : undefined,
-        acidValue: undefined,
-        glyoxylateValue: undefined,
+        acidValue: "",
+        glyoxylateValue: "",
       };
       tableData.value.push(tableItem);
     }
@@ -157,12 +158,30 @@ export default function useMaterial() {
       fullName: "",
       category: undefined,
       tg: undefined,
-      acidValue: undefined,
-      glyoxylateValue: undefined,
+      acidValue: "",
+      glyoxylateValue: "",
     };
     tableData.value.push(item);
     editableData[id] = cloneDeep(item);
   };
+
+  const handleTableExportSelected = () => {
+    const selectedList: IMaterialItem[] = tableData.value.filter((x) =>
+      tableSelectKeys.value.includes(x.uuid),
+    );
+    const keepUndefinedJson: string = JSON.stringify(
+      selectedList,
+      (_key, value) => {
+        if (value === undefined) {
+          return "undefined"; // 将undefined转换为字符串
+        }
+        return value;
+      },
+    );
+    downloadJson(keepUndefinedJson, "物料导出");
+  };
+
+  const handleImportJson = () => {};
 
   const handlSaveTableDataToLocalStorage = () => {
     localStorage.setItem(
@@ -213,5 +232,7 @@ export default function useMaterial() {
     handleTableCancel,
     handleTableDeleteSelected,
     handleTableAdd,
+    handleTableExportSelected,
+    handleImportJson,
   };
 }

@@ -11,9 +11,14 @@
             :rows="4"
             :placeholder="textareaExampleText"
             allow-clear />
-          <a-button type="primary" @click="handleAutoRecognition"
-            >一键识别</a-button
-          >
+          <div flex space-x-12px>
+            <a-button type="primary" @click="handleAutoRecognition"
+              >一键识别</a-button
+            >
+            <a-button type="primary" @click="handleImportJson"
+              >导入json</a-button
+            >
+          </div>
         </div>
       </div>
     </div>
@@ -27,6 +32,13 @@
         <PlusOutlined />
         新增物料
       </a-button>
+
+      <a-button
+        type="primary"
+        :disabled="selectTableRowLength === 0"
+        @click="handleTableExportSelected"
+        >批量导出</a-button
+      >
 
       <a-button
         type="primary"
@@ -136,6 +148,8 @@
     handleTableCancel,
     handleTableDeleteSelected,
     handleTableAdd,
+    handleTableExportSelected,
+    handleImportJson,
   } = useMaterial();
 </script>
 

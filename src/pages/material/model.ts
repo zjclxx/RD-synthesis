@@ -7,6 +7,6 @@ export interface IMaterialItem {
   fullName: string;
   category: MaterialType | undefined;
   tg: number | undefined;
-  acidValue: number | undefined;
-  glyoxylateValue: number | undefined;
+  acidValue: string;
+  glyoxylateValue: string;
 }
