@@ -75,3 +75,60 @@ export const systemStatusList: SystemStatusItem[] = [
 export const LOCAL_MATERIAL_LIST_KEY: string = "localMaterialList";
 
 export const IMPORT_EXPORT_JSON_CONTENT_KEY = "lxx_json_unique_key";
+
+/**
+ * 工艺类型
+ */
+export const enum ProcessType {
+  /**
+   * 通用型
+   */
+  UNIVERSAL = 1,
+  /**
+   * 回流型
+   */
+  BACKFLOW = 2,
+  /**
+   * 控温型
+   */
+  TEMPERATURE_CONTROL = 3,
+}
+
+export const processTypeList = [
+  {
+    key: ProcessType.UNIVERSAL,
+    name: "通用型",
+  },
+  {
+    key: ProcessType.BACKFLOW,
+    name: "回流型",
+  },
+  {
+    key: ProcessType.TEMPERATURE_CONTROL,
+    name: "控温型",
+  },
+];
+
+export const enum DefaultProcessResultsType {
+  INITIAL = "initial",
+  FIRST = "first",
+  LAST = "last",
+}
+
+export const DefaultProcessResults = [
+  {
+    key: DefaultProcessResultsType.INITIAL,
+    time: "-1:00",
+    value: "室温",
+  },
+  {
+    key: DefaultProcessResultsType.FIRST,
+    time: "0:00",
+    value: "0",
+  },
+  {
+    key: DefaultProcessResultsType.LAST,
+    time: "1:00后",
+    value: "20",
+  },
+];

@@ -2,7 +2,7 @@
   <div>
     <h3>物料管理</h3>
 
-    <div px-24px py-16px rounded-4px class="bg-[var(--bg-container-color2)]">
+    <div px-24px py-16px rounded-6px class="bg-[var(--bg-container-color2)]">
       <div>
         <h3>多行一键识别</h3>
         <div mt-20px space-y-16px>
