@@ -25,7 +25,7 @@
     ],
   };
 
-  const props = withDefaults(
+  withDefaults(
     defineProps<{
       data: IProcessItem;
     }>(),

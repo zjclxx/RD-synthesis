@@ -3,6 +3,7 @@
   "type": "module",
   "private": true,
   "packageManager": "pnpm@8.4.0",
+  "homepage": "https://zjclxx.github.io/RD-synthesis",
   "scripts": {
     "dev": "vite",
     "docs:dev": "vitepress dev docs",
@@ -10,7 +11,8 @@
     "build": "vue-tsc && vite build",
     "preview": "vite preview",
     "lint": "eslint src --fix",
-    "dir-tree": "esno ./scripts/dir-tree"
+    "dir-tree": "esno ./scripts/dir-tree",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@ant-design/icons-vue": "^6.1.0",
@@ -19,6 +21,7 @@
     "@vueuse/core": "^10.1.2",
     "ant-design-vue": "^4.2.6",
     "axios": "^1.7.9",
+    "gh-pages": "^6.3.0",
     "lodash-es": "^4.17.21",
     "mitt": "^3.0.1",
     "pinia": "^2.3.0",
