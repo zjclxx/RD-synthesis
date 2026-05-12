@@ -1,1 +1,0 @@
-import{f as u}from"./index-c7283e67.js";import{a2 as a}from"./antd-e6c1c58d.js";function m(e,r=""){var t;const o=((t=u.currentRoute.value)==null?void 0:t.query)??{},n=a(o,e)??r;return decodeURIComponent(n)}function g(e){return/^-?\d+(\.\d+)?$/.test(e)}export{m as g,g as i};
