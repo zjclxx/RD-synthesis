@@ -1,0 +1,1 @@
+import{_ as e}from"./_plugin-vue_export-helper-c27b6911.js";import{W as r,$ as c}from"./vue-bbb35a67.js";const n={};function o(t,s){return r(),c("div",null,"这是配方管理")}const f=e(n,[["render",o]]);export{f as default};

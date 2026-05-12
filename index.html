@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RD 合成系统</title>
+    <script>
+      (function () {
+        const prefersDark =
+          window.matchMedia &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches;
+        const setting = localStorage.getItem("vueuse-color-scheme") || "auto";
+        if (setting === "dark" || (prefersDark && setting !== "light"))
+          document.documentElement.classList.toggle("dark", true);
+      })();
+    </script>
+    <script type="module" crossorigin src="/assets/index-c7283e67.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/vue-bbb35a67.js">
+    <link rel="modulepreload" crossorigin href="/assets/antd-e6c1c58d.js">
+    <link rel="stylesheet" href="/assets/index-3b04b7f7.css">
+  </head>
+  <body>
+    <div id="app"></div>
+    <script src="/loading.js"></script>
+    
+  </body>
+</html>

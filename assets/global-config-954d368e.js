@@ -1,0 +1,1 @@
+import{t as e,H as s,Q as n,V as a}from"./antd-e6c1c58d.js";import{r as i}from"./vue-bbb35a67.js";const c=()=>{const{token:t}=e.useToken();return t},o=i({message:s,modal:n,notification:a});function f(){return o.message}function m(){return o.notification}export{m as a,f as b,c as u};
