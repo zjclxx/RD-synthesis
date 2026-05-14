@@ -3,7 +3,7 @@ import type { LayoutSetting } from "~@/stores/app";
 export default {
   title: "RD 合成系统",
   theme: "inverted",
-  isShowChangeTheme: false,
+  isShowChangeTheme: true,
   logo: "/logo.svg",
   // logo: 'https://gw.alipayobjects.com/zos/rmsportal/KDpgvguMpGfqaHPjicRK.svg',
   collapsed: false,

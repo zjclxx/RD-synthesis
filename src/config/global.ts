@@ -74,7 +74,10 @@ export const systemStatusList: SystemStatusItem[] = [
  */
 export const LOCAL_MATERIAL_LIST_KEY: string = "localMaterialList";
 
-export const IMPORT_EXPORT_JSON_CONTENT_KEY = "lxx_json_unique_key";
+/**
+ * @description 导入导出json的key
+ */
+export const IMPORT_EXPORT_JSON_CONTENT_KEY: string = "lxx_json_unique_key";
 
 /**
  * 工艺类型
@@ -132,3 +135,8 @@ export const DefaultProcessResults = [
     value: "20",
   },
 ];
+
+/**
+ * @description localStorage中工艺列表的key
+ */
+export const LOCAL_PROCESS_LIST_KEY: string = "localProcessList";
